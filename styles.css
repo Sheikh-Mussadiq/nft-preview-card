@@ -88,16 +88,19 @@ p {
     color: var(--Cyan);
     font-weight: 600;
     font-family: 'Outfit', sans-serif;
+    display: block;
+    width: calc(50% - 5px);
+    margin-right: 120px;
 
 }
 .right-text {
     color: var(--Soft-blue);
     padding-left: 6px;
     font-family: 'Outfit', sans-serif;
+    display: block;
+    width: calc(50% - 5px);
 }
-.icon-2 {
-    padding-left: 150px;
-}
+
 hr {
     width: 100%;
     border: 1px solid var(--Soft-blue);
@@ -129,4 +132,16 @@ footer .normal-text {
 .bold-text:hover {
     cursor: pointer;
     color: var(--Cyan);
+}
+@media  (max-width: 360px) {
+.left-text {
+    display: block;
+    width: calc(50% - 5px); /* Adjust the percentage and value as needed */
+    margin-right: 10px; /* Adjust the value as needed for the gap */
+}
+
+.right-text {
+    display: block;
+    width: calc(50% - 5px); /* Adjust the percentage and value as needed */
+}
 }

@@ -1,0 +1,132 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue-: hsl(216, 50%, 16%);
+    --White: hsl(0, 0%, 100%);
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Very-dark-blue);
+
+}
+.main-container {
+    height: 600px;
+    width: 375px;
+    border-radius: 20px;
+    background-color: var(--Very-dark-blue-);
+}
+.card {
+    width: 90%;
+    margin: 20px;
+   
+}
+figure {
+    position: relative;
+}
+figure .main-icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+figure div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  
+}
+figure div:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+figure .view-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+}
+h1:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+p {
+    font-family: 'Outfit', sans-serif;
+    color: var(--Soft-blue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    
+}
+.left-text {
+    padding-left: 6px;
+    color: var(--Cyan);
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+
+}
+.right-text {
+    color: var(--Soft-blue);
+    padding-left: 6px;
+    font-family: 'Outfit', sans-serif;
+}
+.icon-2 {
+    padding-left: 150px;
+}
+hr {
+    width: 100%;
+    border: 1px solid var(--Soft-blue);
+    margin-top: 20px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;                                 
+}
+footer img {
+    width: 40px;
+    height: auto;
+    border: 2px solid var(--White);
+    border-radius: 100%;
+                             
+}
+footer .normal-text {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Soft-blue);
+    font-family: 'Outfit', sans-serif;
+    
+}
+.bold-text {
+    color: var(--White);
+}
+.bold-text:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
